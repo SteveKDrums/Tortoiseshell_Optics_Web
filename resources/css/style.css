@@ -1,0 +1,189 @@
+body {
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.7rem;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+    position: relative;
+}
+
+.banner {
+    height: 31rem;
+    background: url("/Users/stephenkohlmann/GitHub/Tortoiseshell_Optics_Web/resources/images/glasses-bg.png");
+    background-size: cover;
+    padding-top: 2rem;
+}
+
+header {
+    background-color: cadetblue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    padding: 1rem 2rem 1rem 0;
+}
+
+.logo img {
+    height: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+header li {
+    display: inline;
+    padding: 1rem 2rem 0 1rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.mobile {
+    display: none;
+}
+
+.banner-box {
+    background-color: white;
+    display: inline-block;
+    padding: 1.5rem 5rem;
+    font-size: 2rem;
+    position: relative;
+    top: 10rem;
+    left: 50%;
+    box-sizing: border-box;
+}
+
+section.container {
+    display: flex;
+    justify-content: center;
+}
+
+section img {
+    height: 3rem;
+}
+
+#exam-logo {
+    height: 4.5rem;
+}
+
+#exam p {
+    margin-top: 1.5rem;
+}
+
+.section-1 {
+    text-align: center;
+}
+
+.col {
+    margin: 3rem 3rem;
+}
+
+.section-1 p {
+    margin-top: 3rem;
+}
+
+.section-2 .col {
+    margin-top: 0;
+    margin-right: 5%;
+    width: 35%;
+}
+
+h3 {
+    background-color: cadetblue;
+    color: white;
+    padding: 0.5rem 1.25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 10rem;
+}
+
+footer {
+    background-color: azure;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+footer .logo img {
+    padding-left: 3rem;
+    padding-right: 1rem;
+}
+
+@media only screen and (max-width: 1150px) {
+    .container {
+        width: 100%;
+    }
+    .banner {
+        padding-top: 0;
+        background-position: top;
+        height: 22rem;
+    }
+    .banner-box {
+        font-size: 1.33rem;
+        text-align: center;
+        padding: 0.75rem;
+        position: absolute;
+        right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .desktop {
+        display: none
+    }
+    .mobile {
+        display: inline-block;
+    }
+    .banner {
+        background-position: left;
+        height: 18rem;
+    }
+    .banner-box {
+        top: 9rem;
+        left: 0;
+        margin: 1rem auto;
+        text-align: center;
+        width: 100%;
+        font-size: 1rem;
+    }
+    section.container {
+        flex-direction: column;
+        /*justify-content: center;*/
+        align-items: center;
+        width: 100%;
+        margin: 3rem 0;
+        font-size: 0.77rem;
+    }
+    #exam p, .section-1 p {
+        margin: 1.54rem 0;
+    }
+    .section-2 h3 {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+
+    }
+    .section-2 p {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+    .section-2 .col {
+        width: 100%;
+        margin: 0;
+    }
+    .col {
+        width: 100%;
+        margin: 0;
+    }
+    footer img {
+        margin: auto;
+    }
+}
